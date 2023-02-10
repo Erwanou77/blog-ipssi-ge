@@ -120,13 +120,24 @@ Utilisation de la méthode get afin de récuperer tout les commentaires de l'uti
 ```bash
 /api/comments
 ```
+Utilisation de la méthode POST pour créer des commentaires 
+
+```bash
+/api/comment/:id
+
+POST:
+{
+  "content": "content",
+  "postId": "postId"
+}
+```
 
 Utilisation de la méthode get afin de récuperer toutes les informations sur commentaires
 
 ```bash
 /api/comment/:id
 
-POST:
+PUT:
 {
   "content": "content"
 }
