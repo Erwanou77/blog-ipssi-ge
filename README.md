@@ -33,18 +33,37 @@ Page d'inscription
 
 ```bash
 /sign-up
+
+POST:
+{
+  "username": "username",
+  "name": "name",
+  "password": "password"
+}
 ```
 
 Page de connexion
 
 ```bash
 /sign-in
+
+POST:
+{
+  "username": "username",
+  "password": "password"
+}
 ```
 
 Méthode **GET** user && **PUT** user
 
 ```bash
 /api/user
+
+PUT:
+{
+  "name": "name",
+  "password": "password"
+}
 ```
 
 Liste de tous les utilisateurs
@@ -57,23 +76,43 @@ Récupération d'un utilisateur && modification d'un utilisateur && suppression 
 
 ```bash
 /api/user/:id
+
+PUT:
+{
+  "name": "name",
+  "password": "password"
+}
 ```
 Utilisation de la méthode get afin de récuperer les post de l'utilisateur
 
 ```bash
 /api/post
+
+
+POST:
+{
+  "title": "title",
+  "content": "content"
+}
 ```
 
 Utilisation de la méthode get afin de récuperer tout les post de l'utilisateur
 
 ```bash
 /api/posts
+
 ```
 
 Utilisation de la méthode get pour post, put et delete 
 
 ```bash
 /api/post/:id
+
+PUT:
+{
+  "title": "title",
+  "content": "content"
+}
 ```
 
 Utilisation de la méthode get afin de récuperer tout les commentaires de l'utilisateur
@@ -86,4 +125,9 @@ Utilisation de la méthode get afin de récuperer toutes les informations sur co
 
 ```bash
 /api/comment/:id
+
+POST:
+{
+  "content": "content"
+}
 ```
