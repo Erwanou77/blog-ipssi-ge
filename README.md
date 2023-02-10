@@ -58,32 +58,31 @@ Récupération d'un utilisateur && modification d'un utilisateur && suppression 
 ```bash
 /api/user/:id
 ```
-
-get des post du user && post post
+Utilisation de la méthode get afin de récuperer les post de l'utilisateur
 
 ```bash
 /api/post
 ```
 
-get posts sur tous les posts avec tous les comments
+Utilisation de la méthode get afin de récuperer tout les post de l'utilisateur
 
 ```bash
 /api/posts
 ```
 
-get post && put post && delete post
+Utilisation de la méthode get pour post, put et delete 
 
 ```bash
 /api/post/:id
 ```
 
-get sur tous les comments
+Utilisation de la méthode get afin de récuperer tout les commentaires de l'utilisateur
 
 ```bash
 /api/comments
 ```
 
-get comment && post comment && put comment && delete comment
+Utilisation de la méthode get afin de récuperer toutes les informations sur commentaires
 
 ```bash
 /api/comment/:id
